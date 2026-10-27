@@ -27,3 +27,22 @@ PYTHONPATH=/workspace/.sheetmusic-tools python build_part.py
 
 Dependencies: music21, verovio, cairosvg, and pypdf. They are development tools,
 not needed to open or print the resulting PDF or import the MusicXML.
+
+## Separate melody arrangement
+
+`output/Cicada-Trombone-Melody-draft.pdf` and its MusicXML counterpart contain
+a separate main-melody adaptation for trombone, in bass clef and the same concert
+key. The flute's printed melody is lowered two octaves. Optional flute octave
+extensions are not applied. During the flute's unpitched vocal cues (m. 76–77,
+80–81, 84–85), a marked Trombone 1 fill is used, lowered one octave from the
+original brass part. Consecutive whole-bar rests use multimeasure notation.
+
+This is a provisional manual transcription from screenshots. Pitches, rhythms,
+ornaments, and phrase connections need comparison with a clearer source before
+performance; it is not a verified note-for-note extraction. The original
+Trombone 1 part remains separate and unchanged.
+
+Regenerate using `PYTHONPATH=/workspace/.sheetmusic-tools python build_melody.py`.
+`melody-transcription.json` retains both the source-register notes and the
+transposed notes for review. The two-octave lowering is consistent throughout
+the flute-derived material, with no key change.
