@@ -88,12 +88,26 @@ part.insert(0,dynamics.Crescendo(measures[88].notes[0],measures[89].notes[-1]))
 part.insert(0,dynamics.Crescendo(measures[113].notes[1],measures[113].notes[-1]))
 measures[113].insert(3.9,dynamics.Dynamic('ff'))
 measures[113].rightBarline=bar.Barline('final')
+# Group consecutive whole-bar rests, retaining the underlying measure count.
+rest_runs=[]
+run=[]
+for i, events in data.items():
+    if events==[('r',4)]:
+        run.append(i)
+    else:
+        if len(run)>1: rest_runs.append(run)
+        run=[]
+if len(run)>1: rest_runs.append(run)
+for run in rest_runs:
+    group=spanner.MultiMeasureRest(*(measures[i].notesAndRests[0] for i in run))
+    group.useSymbols=False
+    part.insert(0,group)
 score.append(part)
 for i,m in measures.items():
     assert abs(float(m.duration.quarterLength)-(1 if i==1 else 4))<1e-6, (i,m.duration)
 xml_path=OUT/'Cicada-Trombone-1-draft.musicxml'
 score.write('musicxml',fp=xml_path)
-# Keep measure numbers visible, including stretches of rests.
+# Keep source measure numbers visible alongside multimeasure rest counts.
 tree=ET.parse(xml_path)
 for measure in tree.findall('.//part/measure'):
     pr=measure.find('print')

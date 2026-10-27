@@ -15,7 +15,8 @@ The opening pickup and first full bar (m. 1–2) are uncertain at the screenshot
 resolution and require a close-up; pickup notes are colored red. All pitches,
 rhythms, ties, and dynamics should receive a source comparison before performance.
 All twelve supplied pages are represented, including the ending.
-Rests remain individually numbered to simplify checking against the full score.
+Consecutive full-bar rests are combined into numbered multimeasure rests
+(m. 10–17: 8 bars; m. 42–49: 8 bars; m. 90–91: 2 bars), retaining source measure numbers.
 
 Generate in the existing checkout (no additional worktree needed):
 

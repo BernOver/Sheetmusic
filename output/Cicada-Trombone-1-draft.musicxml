@@ -22,21 +22,21 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="Pc08c19fd373a3e3115b56b4f841216f7">
+    <score-part id="P96f94b982a82f00868e0229c92f43070">
       <part-name>Trombone 1</part-name>
       <part-abbreviation>Tbn. 1</part-abbreviation>
-      <score-instrument id="I9112511882670bfadc533f59c376018b">
+      <score-instrument id="I6c89f5dcbbf9ba6095569cb69b862513">
         <instrument-name>Trombone</instrument-name>
         <instrument-abbreviation>Trb</instrument-abbreviation>
       </score-instrument>
-      <midi-instrument id="I9112511882670bfadc533f59c376018b">
+      <midi-instrument id="I6c89f5dcbbf9ba6095569cb69b862513">
         <midi-channel>1</midi-channel>
         <midi-program>58</midi-program>
       </midi-instrument>
     </score-part>
   </part-list>
   
-  <part id="Pc08c19fd373a3e3115b56b4f841216f7">
+  <part id="P96f94b982a82f00868e0229c92f43070">
     
     <measure implicit="no" number="1">
       <attributes>
@@ -302,6 +302,11 @@
     <print><measure-numbering>measure</measure-numbering></print></measure>
     
     <measure implicit="no" number="10">
+      <attributes>
+        <measure-style>
+          <multiple-rest use-symbols="no">8</multiple-rest>
+        </measure-style>
+      </attributes>
       <note>
         <rest measure="yes" />
         <duration>40320</duration>
@@ -924,6 +929,11 @@
     <print><measure-numbering>measure</measure-numbering></print></measure>
     
     <measure implicit="no" number="42">
+      <attributes>
+        <measure-style>
+          <multiple-rest use-symbols="no">8</multiple-rest>
+        </measure-style>
+      </attributes>
       <note>
         <rest measure="yes" />
         <duration>40320</duration>
@@ -1972,6 +1982,11 @@
     <print><measure-numbering>measure</measure-numbering></print></measure>
     
     <measure implicit="no" number="90">
+      <attributes>
+        <measure-style>
+          <multiple-rest use-symbols="no">2</multiple-rest>
+        </measure-style>
+      </attributes>
       <direction>
         <direction-type>
           <dynamics default-x="-36" default-y="-80">
