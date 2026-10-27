@@ -51,6 +51,7 @@ the flute-derived material, with no key change.
 
 - [Printable euphonium PDF](output/Premier-Inn-Euphonium-Melody.pdf)
 - [Editable MusicXML](output/Premier-Inn-Euphonium-Melody.musicxml)
+- [MuseScore project (.mscz)](output/Premier-Inn-Euphonium-Melody.mscz)
 
 Separate arrangement of **Premier Inn** by **Good Kid**, based on the upper
 melody of the supplied piano arrangement credited to **Yoyo1235**. It covers
